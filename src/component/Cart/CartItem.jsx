@@ -1,4 +1,4 @@
-import './CartItem';
+import './CartItem.css';
 
 import { useDispatch } from 'react-redux';
 import { removeFromCart } from '../../redux/slices/cartSlice';
@@ -17,7 +17,7 @@ const CartItem = ({id,img,name,price,quantity}) => {
             <button className={"remove"} onClick={handleRemove}>
                 X
             </button>
-            <div className={"image"}>
+            <div className={"cart-image"}>
                 <img src={img} alt={name} />
             </div>
             

@@ -26,7 +26,7 @@
     font-size: 10px;
   }
   
-  button {
+.App  button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -36,6 +36,6 @@
     font-size: 12px;
   }
   
-  button:hover {
+.App  button:hover {
     background-color: #0056b3;
   }
