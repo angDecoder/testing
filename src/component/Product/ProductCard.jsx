@@ -10,10 +10,11 @@ const ProductCard = ({id,title,description,price,image}) => {
     const product = products.find(product => product.id === parseInt(id));
 
     const handleAddToCart = () => {
+        const image = product.images[0];
         const product_details = {
             id: product.id,
             name: product.name,
-            img: product.img,
+            image: image,
             price: product.price,
         }
         dispatch(addToCart(product_details));
